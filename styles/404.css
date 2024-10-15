@@ -1,0 +1,43 @@
+.bg {
+  background: rgb(71, 87, 226);
+  background: -moz-linear-gradient(
+    45deg,
+    rgba(71, 87, 226, 1) 0%,
+    rgba(150, 94, 243, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    45deg,
+    rgba(71, 87, 226, 1) 0%,
+    rgba(150, 94, 243, 1) 100%
+  );
+  background: linear-gradient(
+    45deg,
+    rgba(71, 87, 226, 1) 0%,
+    rgba(150, 94, 243, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4757e2",endColorstr="#965ef3",GradientType=1);
+}
+.bg > .notfound_page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.bg > .notfound_page > img{
+    width: 50%;
+}
+.bg > .notfound_page > a{
+    margin-top: 20px;
+    background-color: white;
+    color: #965EF3;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 10px;
+    transition: all 0.1s ease-in-out;
+}
+.bg > .notfound_page > a:hover{
+    background-color: #6000fb;
+    color: white;
+    box-shadow: 0 0 7px 0 #000;
+}

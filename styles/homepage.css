@@ -1,0 +1,92 @@
+.main-wrap {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+.main-wrap > .main-lt {
+  position: relative;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 20%;
+  flex: 0 0 20%;
+  height: calc(100vh - 62px);
+}
+.main-wrap > .main-rt {
+  position: relative;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 80%;
+  flex: 0 0 80%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.main-wrap > .main-rt > .main-rt_inside_wrap {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+.main-wrap > .main-rt > .main-rt_inside_wrap > .main-rt_inside_lt {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 80%;
+  flex: 0 0 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.main-wrap > .main-rt > .main-rt_inside_wrap > .main-rt_inside_rt {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 20%;
+  flex: 0 0 20%;
+}
+.main-wrap > .main-rt > .main-rt_inside_wrap > .main-rt_inside_rt {
+  padding: 10px;
+}
+
+@media screen and (max-width: 1280px) {
+  .main-wrap > .main-rt > .main-rt_inside_wrap > .main-rt_inside_lt {
+    flex: 0 0 70%;
+  }
+  .main-wrap > .main-rt > .main-rt_inside_wrap > .main-rt_inside_rt {
+    flex: 0 0 30%;
+  }
+}
+@media screen and (max-width: 900px) {
+  .main-wrap > .main-rt > .main-rt_inside_wrap > .main-rt_inside_lt {
+    flex: 0 0 90%;
+  }
+  .main-wrap > .main-rt > .main-rt_inside_wrap > .main-rt_inside_rt {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .main-wrap > .main-lt {
+    flex: 0 0 10%;
+  }
+  .main-wrap > .main-rt {
+    flex: 0 0 90%;
+  }
+  .main-wrap > .main-rt > .main-rt_inside_wrap > .main-rt_inside_lt{
+    flex: 0 0 100%;
+  }
+
+}

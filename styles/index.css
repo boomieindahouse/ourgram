@@ -1,0 +1,241 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Arial";
+  outline: none;
+}
+body {
+  background-color: #f4f4f4;
+}
+nav,
+ul {
+  list-style-type: none;
+}
+nav > li > a,
+ul > li > a {
+  color: inherit;
+}
+#btn_follow{
+  background-color: black;
+  color: white;
+  padding: 3px 6px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  border: none;
+}
+#btn_follow:hover{
+  background-color: #161616;
+}
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+}
+.f-12 {
+  font-size: 12px;
+}
+.f-20 {
+  font-size: 20px;
+}
+.black {
+  color: #262626;
+}
+.gray {
+  color: #555;
+}
+.red{
+  color: red;
+}
+.lightgray {
+  color: #b1b1b1;
+}
+.blue {
+  color: #157ba4;
+}
+.blue-sub {
+  color: #0085ff;
+}
+.white {
+  color: #fff;
+}
+.t-c{
+  text-align: center;
+}
+.like_btn{
+  background-color: transparent;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+.avatar-md {
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 32px;
+  flex: 0 0 32px;
+  max-width: 32px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  -webkit-box-shadow: 0 0 7px 0 lightgray;
+  box-shadow: 0 0 7px 0 lightgray;
+}
+.avatar-lg {
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 64px;
+  flex: 0 0 64px;
+  max-width: 64px;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  -webkit-box-shadow: 0 0 7px 0 lightgray;
+  box-shadow: 0 0 7px 0 lightgray;
+}
+.avatar-lg > p,
+.avatar-md > p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.b {
+  font-weight: bold;
+}
+.p-1 {
+  padding: 10px;
+}
+.px-05 {
+  padding: 0 5px;
+}
+.px-1 {
+  padding: 0 10px;
+}
+.py-2 {
+  padding: 20px 0;
+}
+.py-1 {
+  padding: 10px 0;
+}
+.mx-2 {
+  margin: 20px 0;
+}
+.mx-05{
+  margin: 5px 0;
+}
+.mr-05 {
+  margin-right: 5px;
+}
+.ml-1 {
+  margin-left: 20px !important;
+}
+.mb-1 {
+  margin-bottom: 10px;
+}
+.mb-2 {
+  margin-bottom: 20px;
+}
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.flex_start {
+  -webkit-box-align: start !important;
+  -ms-flex-align: start !important;
+  align-items: flex-start !important;
+}
+.flex_end{
+  -webkit-box-pack: end !important;
+      -ms-flex-pack: end !important;
+          justify-content: flex-end !important;
+  -webkit-box-align: end !important;
+      -ms-flex-align: end !important;
+          align-items: flex-end !important;
+}
+.space_between {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.space_evenly {
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+}
+.center {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.message {
+  padding: 20px 10px;
+  border-radius: 5px;
+  margin: 10px 0;
+  font-weight: bold;
+}
+.update{
+  color: #0e4b8d;
+  background-color: #cce5ff;
+}
+.error {
+  color: red;
+  background-color: #f8d7da;
+}
+.warning {
+  color: #ffc90e;
+  background-color: #fff3cd;
+}
+.container {
+  margin: 0 auto;
+}
+@media screen and (min-width: 576px) {
+  .container {
+    max-width: 100%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 100%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .container {
+    max-width: 100%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+}

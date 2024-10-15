@@ -1,0 +1,102 @@
+.header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding: 20px 0;
+  background-color: #615b86;
+  color: #fff;
+  -webkit-box-shadow: 0 0 7px 0 lightgray;
+  box-shadow: 0 0 7px 0 lightgray;
+  z-index: 1 !important;
+}
+.header > .navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.header > .navbar > .nav-items-rt {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+.header > .navbar > .nav-items-rt > .nav-item,
+.header > .navbar > .nav-items-lt > .nav-item {
+  padding: 0 15px;
+}
+.header > .navbar > .nav-items-rt > .nav-item > a,
+.header > .navbar > .nav-items-lt > .nav-item > a {
+  text-decoration: none;
+  color: inherit;
+}
+.header > .navbar > .nav-items-rt  > .nav-item > .dropdown_noti{
+  height: 0;
+  transition: all 0.1s ease-in-out;
+  overflow: hidden;
+  position: absolute;
+  top: 30px;
+  right: 7%;
+  background-color: white;
+  max-width: 300px;
+  width: 180px;
+  border-radius: 10px;
+  color: black;
+}
+.noti-active{
+  height: auto !important;
+  border: 1px solid gray !important;
+  padding: 3px 12px !important;
+}
+.header > .navbar > .nav-items-rt  > .nav-item > .dropdown_noti > ul >li{
+  padding: 5px 0;
+  border-bottom: 1px solid #e7e7e7;
+}
+.header > .navbar > .nav-items-rt  > .nav-item > button {
+  font-weight: bold;
+  background-color: transparent;
+  color: inherit;
+  cursor: pointer;
+  border: none;
+  padding: 3px 5px;
+  transition: all 0.1s ease-in-out;
+  font-size: 12px;
+}
+.header > .navbar > .nav-items-rt  > .nav-item > button > i{
+  font-size: 16px;
+}
+.btn_createpost{
+  border:1px solid white !important;
+  border-radius: 10px;
+  transition: all 0.1s ease-in-out;
+}
+.btn_createpost:hover{
+  color: #615b86 !important;
+  background-color: white !important;
+}
+.noti_tg {
+  position: relative;
+}
+.noti_tg > .badge{
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 10px;
+  width: 10px;
+  font-size: 8px;
+  border-radius: 50%;
+  background-color: red;
+}

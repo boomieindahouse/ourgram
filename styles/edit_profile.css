@@ -1,0 +1,219 @@
+.main-wrap {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+.main-wrap > .main-lt {
+  position: relative;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 20%;
+  flex: 0 0 20%;
+  height: calc(100vh - 62px);
+}
+.main-wrap > .main-rt {
+  position: relative;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 80%;
+  flex: 0 0 80%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #f4f4f4;
+  padding: 20px 60px;
+}
+.main-wrap > .main-rt > .main-rt_inside_wrap {
+  width: 100%;
+}
+.edit_profile {
+  width: inherit;
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+}
+.edit_profile > .edit_profile_tools {
+  flex: 0 0 20%;
+  border: 1px solid #cdcdcd;
+  text-align: center;
+}
+.edit_profile > .edit_profile_tools > nav > li {
+  padding: 10px 0;
+}
+.edit_profile > .edit_profile_tools > nav > li:hover{
+    background-color: #f7f7f7;
+}
+.edit_profile > .edit_profile_tools > nav > li.active {
+  border-left: 3px solid black;
+  border-radius: 1px;
+}
+.edit_profile > .edit_profile_mainscreen {
+  flex: 0 0 80%;
+  border: 1px solid #cdcdcd;
+  padding: 4px 12px;
+}
+.edit_profile > .edit_profile_mainscreen > form > .row {
+  margin: 10px 0;
+}
+.edit_profile > .edit_profile_mainscreen > form > .row > p {
+  width: 100px;
+  text-align: right;
+  padding: 0 5px;
+}
+.edit_profile > .edit_profile_mainscreen > form > .row > .textbox {
+  padding: 4px 12px;
+  border-radius: 2px;
+  border: 1px solid #cdcdcd;
+  width: 50%;
+}
+.edit_profile > .edit_profile_mainscreen > form > .row > .textbox > input,
+.edit_profile > .edit_profile_mainscreen > form > .row > .textbox > textarea {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+.edit_profile > .edit_profile_mainscreen > form > .row > .textbox > textarea {
+    resize: none;
+    height: 100px;
+}
+.edit_profile > .edit_profile_mainscreen > form > .row > .textbox > input:focus,
+.edit_profile
+  > .edit_profile_mainscreen
+  > form
+  > .row
+  > .textbox
+  > textarea:focus {
+  outline: none;
+}
+.edit_profile > .edit_profile_mainscreen > form > .row > button[type="submit"] {
+  color: white;
+  padding: 3px 6px;
+  background-color: #0068ac;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: all 0.2s;
+}
+.edit_profile
+  > .edit_profile_mainscreen
+  > form
+  > .row
+  > button[type="submit"]:hover {
+  background-color: #0074cc;
+}
+.del_btn {
+  margin-left: 10px;
+  background-color: transparent;
+  border: none;
+  color: #af2634;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.del_btn:hover {
+  text-decoration: underline;
+}
+.ch_pic_pf{
+  position: relative;
+  color: #0068ac ;
+  border: none;
+  background: transparent;
+  font-weight: bold;
+  transition: all 0.2s ease-in-out;
+}
+.ch_pic_pf:hover{
+  color: #0074cc;
+}
+.ch_pic_pf > input{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer !important;
+}
+.edit_profile_modal{
+ display: none;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.edit_profile_modal > .edit_profile_modal_content{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.edit_profile_modal > .edit_profile_modal_content > form{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  padding: 12px;
+  background-color: white;
+  box-shadow: 0 0 7px 0 #555;
+  border-radius: 5px;
+}
+.edit_profile_modal > .edit_profile_modal_content > form > .input_wrap{
+  width: 100%;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid lightgray;
+  padding: 3px 6px;
+  margin: 10px 0;
+}
+.edit_profile_modal > .edit_profile_modal_content > form > .input_wrap > input{
+  height: 100%;
+  width: 100%;
+  border: none;
+}
+.edit_profile_modal > .edit_profile_modal_content > form > .input_wrap > input:focus{
+  outline: none;
+}
+.edit_profile_modal > .edit_profile_modal_content > form > .row > .cf_del_btn{
+  background-color: red;
+  color: white;
+  border-radius: 5px;
+  padding: 6px;
+  margin-right: 5px;
+  cursor: pointer;
+  font-weight: 400;
+  border: none;
+}
+.edit_profile_modal > .edit_profile_modal_content > form > .row > .cc_btn{
+  background-color: #e7e7e7;
+  border-radius: 5px;
+  padding: 6px;
+  cursor: pointer;
+  font-weight: 400;
+  border: none;
+}
+@media screen and (max-width: 768px) {
+  .main-wrap > .main-lt{
+    flex: 0 0 10%;
+  }
+  .main-wrap > .main-rt{
+    flex: 0 0 90%;
+    padding: 20px !important;
+  }
+  .main-wrap > .main-rt > .main-rt_inside_wrap{
+    width: 100%;
+  }
+}

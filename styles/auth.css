@@ -1,0 +1,80 @@
+.main {
+  height: 91.5vh;
+  display: flex;
+  flex-direction: row;
+}
+.main > .main-lt {
+  flex: 0 0 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+}
+.main > .main-lt > form > .input-wrap {
+  position: relative;
+  width: 100%;
+  border-bottom: 1px solid #b1b1b1;
+  height: 40px;
+  margin-bottom: 10px;
+}
+.main > .main-lt > form > .input-wrap > input {
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  padding: 0 10px;
+}
+.main > .main-lt > form > input {
+  background-color: #0085ff;
+  border: none;
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 10px;
+  margin-top: 20px;
+  transition: all 0.1s ease-in-out;
+}
+.main > .main-lt > form > input:hover {
+  background-color: #0060ba;
+}
+.main > .main-rt {
+  flex: 0 0 70%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px;
+  color: #0085ff;
+  padding: 0 30px;
+}
+.main > .main-rt > .line {
+  border-left: 1px solid #b1b1b1;
+  padding: 0 40px;
+}
+.main > .main-rt > .line > img {
+  width: 80%;
+}
+
+@media screen and (max-width: 1200px) {
+  .main > .main-rt > img {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .main{
+    flex-direction: column !important;
+  }
+  .main > .main-rt {
+    justify-content: flex-start;
+  }
+  .main > .main-rt > .line{
+    border: none;
+  }
+  .main > .main-rt > .line > img{
+    width: 100%;
+  }
+}
